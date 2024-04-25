@@ -30,13 +30,14 @@ struct ContentView: View {
                 Button("Remove Dice", systemImage: "minus.circle.fill") {
                     numberOfDice -= 1
                 }
+                .symbolRenderingMode(.multicolor)
                 .disabled(numberOfDice == 1)
                 
                 Button("Add Dice", systemImage: "plus.circle.fill") {
                     numberOfDice += 1
                 }
-                .disabled(numberOfDice == 5)
-                
+                .symbolRenderingMode(.multicolor)
+                .disabled(numberOfDice == 5)                
             }
             .padding()
             .labelStyle(.iconOnly)
