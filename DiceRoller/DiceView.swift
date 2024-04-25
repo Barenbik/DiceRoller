@@ -14,7 +14,8 @@ struct DiceView: View {
         VStack {
             Image(systemName: "die.face.\(numberOfPips)")
                 .resizable()
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+                .frame(maxWidth: 100, maxHeight: 100)
+                .aspectRatio(1, contentMode: .fit)
             
             Button("Roll") {
                 withAnimation {

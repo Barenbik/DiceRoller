@@ -33,10 +33,11 @@ struct ContentView: View {
                 Button("Add Dice") {
                     numberOfDice += 1
                 }
-                .disabled(numberOfDice == 3)
+                .disabled(numberOfDice == 5)
             }
             .padding()
         }
+        .padding()
     }
 }
 
